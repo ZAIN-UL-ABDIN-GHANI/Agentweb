@@ -1,7 +1,7 @@
 import React from "react";
 import Homeimage from "../assets/homepageimage.png";
 import AgentsCards from "../components/Agent/AgentCard";
-import AgentsData from "../components/Agent/AgentData"; 
+import AgentsData from "../components/Agent/AgentData";
 import { Link } from "react-router-dom";
 
 export default function Home() {
@@ -34,18 +34,19 @@ export default function Home() {
 
             {/* CTA Buttons */}
             <div className="mt-8 flex gap-4">
-              <a
-                href="/login"
+              <Link
+                to="/login"
                 className="px-3 text-[12px] md:text-[16px] md:px-6 py-3 rounded-md bg-pur text-black font-semibold shadow hover:bg-purLight transition"
               >
                 Start Free Trial
-              </a>
-              <a
-                href="/contact"
+              </Link>
+
+              <Link
+                to="/contact"
                 className="px-6 py-3 rounded-md border border-pur text-pur hover:bg-purLight transition"
               >
                 Get Started
-              </a>
+              </Link>
             </div>
 
             {/* Features */}
