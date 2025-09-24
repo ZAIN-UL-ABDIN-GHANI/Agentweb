@@ -90,7 +90,7 @@ export default function ContactPage() {
   }
 
   return (
-    <main className="min-h-screen px-[8%] md:px-[6%] py-[20%] md:py-8 mt-[20%] sm:mt-[2%] md:mt-[6%] text-sm md:text-base">
+    <main className="min-h-screen px-[8%] md:px-[6%] py-[20%] md:py-8 mt-[10%] sm:mt-[2%] md:mt-[6%] text-sm md:text-base">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
         {/* LEFT – Form */}
         <section className="lg:col-span-7">

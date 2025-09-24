@@ -21,12 +21,12 @@ export default function Header() {
           "linear-gradient(90deg, #0b0b0d 0%, rgba(23,18,12,0.85) 40%, rgba(20,18,15,0.95) 100%)",
       }}
     >
-      <div className="w-[95%] max-w-7xl pt-4">
+      <div className="w-[95%] max-w-7xl pt-4 ">
         <div className="rounded-full bg-[#1a1406] border border-gray-600/40 shadow-[0_0_20px_rgba(157,0,255,0.25)]">
           <div className="flex items-center justify-between px-6 py-2">
             {/* LEFT: Logo */}
             <div className="flex items-center">
-              <img src={logo} alt="AXIONAI" className="h-12 w-auto" />
+              <img src={logo} alt="AgentAI" className="h-12 w-auto" />
             </div>
 
             {/* CENTER NAV (Desktop) */}

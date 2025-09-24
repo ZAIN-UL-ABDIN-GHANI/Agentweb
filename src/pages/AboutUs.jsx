@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function AboutUS() {
   return (
-    <section className="relative px-[2%] md:px-[0.3%] mt-[20%] sm:mt-[2%] md:mt-[6%] overflow-hidden">
+    <section className="relative px-[2%] md:px-[0.3%] mt-[30%] sm:mt-[2%] md:mt-[6%] overflow-hidden">
       <div
         className="absolute inset-0"
         style={{
@@ -116,7 +116,7 @@ export default function AboutUS() {
             </ul>
           </div>
 
-          <div className="lg:col-span-5 flex justify-center  -mt-[30%] md:-mt-[30%]">
+          <div className="lg:col-span-5 flex justify-center  -mt-[10%] md:-mt-[30%]">
             <img
               src={Homeimage}
               alt="Team and agents"

@@ -19,7 +19,7 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center min-h-[108vh]">
           {/* LEFT: Text Content */}
           <div className="lg:col-span-7 max-w-2xl">
-            <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-[34.7px] md:leading-[37.7px] lg:leading-[47px]">
+            <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-[34.7px] md:leading-[37.7px] lg:leading-[47px] mt-[30%] sm:mt-[0.6%]">
               <span className="text-pur">Next-Gen Agents:</span>{" "}
               <span className="block text-white/95">Smart Automation</span>
               <span className="block text-white/95">for Modern Business</span>
@@ -101,7 +101,7 @@ export default function Home() {
           </div>
 
           {/* RIGHT: Image */}
-          <div className="lg:col-span-5 flex justify-center -mt-[50%] md:mt-[1%]">
+          <div className="lg:col-span-5 flex justify-center -mt-[1%] mb-6  md:mt-[2%]">
             <img
               src={Homeimage}
               alt="Robot"
@@ -118,7 +118,7 @@ export default function Home() {
       </div>
 
       {/* Explore Section */}
-      <div className="max-w-3xl mx-auto text-center mb-8">
+      <div className="max-w-3xl mx-auto text-center mb-8 px-[2.3%] sm:px-0">
         <h1 className="text-2xl md:text-4xl font-bold mb-2 text-white">
           Explore All <span className="text-pur">AI Agent Solutions</span>
         </h1>
@@ -130,12 +130,12 @@ export default function Home() {
       </div>
 
       {/* Only 3 agents shown here */}
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto px-[4%] md:px-[5%] ">
         <AgentsCards items={AgentsData.slice(0, 3)} />
       </div>
 
       {/* Show more button */}
-      <div className="max-w-6xl mx-auto mt-8 flex justify-start">
+      <div className="max-w-6xl mx-auto mt-8 ml-[5%] md:ml-[10%] flex justify-start">
         <Link
           to="/agents"
           className="px-6 py-3 rounded-lg bg-pur text-black font-semibold hover:bg-purLight transition"

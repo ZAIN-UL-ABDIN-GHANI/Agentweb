@@ -73,7 +73,7 @@ export default function AgentPage() {
   return (
     <div className="min-h-screen px-[4%] md:px-[6%] mt-[20%] sm:mt-[2%] md:mt-[6%] bg-gradient-to-b from-black via-[#1a1406] to-black text-white py-8">
       {/* Header */}
-      <div className="max-w-3xl mx-auto text-center mb-8">
+      <div className="max-w-3xl   mx-auto text-center mb-8">
         <h1 className="text-2xl md:text-4xl font-bold mb-2">
           Explore All <span className="text-pur">AI Agent Solutions</span>
         </h1>
