@@ -2,7 +2,9 @@ import React from "react";
 import Homeimage from "../assets/homepageimage.png";
 import AgentsCards from "../components/Agent/AgentCard";
 import AgentsData from "../components/Agent/AgentData";
+import AiBusyWork from "./AiBusyWork";
 import { Link } from "react-router-dom";
+import TestimonialSlider from "../components/TestimonialSlider";
 
 export default function Home() {
   return (
@@ -144,6 +146,8 @@ export default function Home() {
           Show more
         </Link>
       </div>
+      <AiBusyWork/>
+      <TestimonialSlider/>
     </section>
   );
 }

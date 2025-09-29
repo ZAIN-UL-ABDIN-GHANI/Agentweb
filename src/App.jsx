@@ -10,13 +10,14 @@ import Automations from './pages/Automationspage';
 import AboutUS from './pages/AboutUs';
 import ContactPage from './pages/Contactpage ';
 
-// 🔑 Auth Pages
+//  Auth Pages
 import Login from './pages/Auth/Loginpage';
 import Signup from './pages/Auth/SigninPage';
+import PricingPlans from './pages/Pricingpage';
 
 function App() {
   return (
-    <div className="min-h-full font-primary">
+    <div className="min-h-full font-primary select-none">
       <Header />
       <ScrollToTop />
       <main className="w-full">
@@ -27,6 +28,7 @@ function App() {
           <Route path="/agents" element={<Agents />} />
           <Route path="/automations" element={<Automations />} />
           <Route path="/contact" element={<ContactPage />} />
+                 <Route path="/Pricing" element={<PricingPlans />} />
 
           {/* 🔑 Auth Pages */}
           <Route path="/login" element={<Login />} />

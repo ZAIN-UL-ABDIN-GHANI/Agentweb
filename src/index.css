@@ -18,4 +18,19 @@ body {
   background-color: var(--app-bg-fallback);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
+
+
+@layer base {
+
+  .no-caret *::after {
+    content: "" !important;
+    display: none !important;
+  }
+  .no-caret *::before {
+    content: "" !important;
+    display: none !important;
+  }
+}
+
