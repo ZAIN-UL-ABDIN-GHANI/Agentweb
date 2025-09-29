@@ -61,7 +61,7 @@ export default function PricingPlans() {
                 </div>
                 <div className="text-xs text-gray-600 mt-1">7 days free</div>
               </div>
-              <button className="rounded-full px-6 py-2 bg-pur text-white shadow-sm hover:brightness-95 transition">
+              <button className="rounded-full text-[10px] px-4 md:px-6 py-2  bg-pur text-white shadow-sm hover:brightness-95 transition">
                 Upgrade
               </button>
             </div>
@@ -133,7 +133,7 @@ export default function PricingPlans() {
                     2 days left in trial
                   </div>
                 </div>
-                <button className="rounded-xl px-6 py-2 bg-pur text-white font-medium shadow hover:brightness-95 transition">
+                <button className="rounded-xl text-[10px] px-4 md:px-6 py-2  bg-pur text-white font-medium shadow hover:brightness-95 transition">
                   Manage
                 </button>
               </div>
@@ -191,7 +191,7 @@ export default function PricingPlans() {
                   Custom plans available
                 </div>
               </div>
-              <button className="rounded-full px-4 md:px-4 py-2  bg-pur text-white shadow-sm hover:brightness-95 transition">
+              <button className="rounded-full text-[10px] px-4 md:px-6 py-2  bg-pur text-white shadow-sm hover:brightness-95 transition">
                 Custom Pricing
               </button>
             </div>
