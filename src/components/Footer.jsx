@@ -17,10 +17,10 @@ export default function Footer() {
           <h3 className="font-semibold mb-3">Product</h3>
           <ul className="space-y-2">
             <li><Link to="/agents" className="hover:underline">AI Agents</Link></li>
-            <li><Link to="/automation" className="hover:underline">Task Automation</Link></li>
-            <li><Link to="/integrations" className="hover:underline">Integrations</Link></li>
+            <li><Link to="/" className="hover:underline">Task Automation</Link></li>
+            <li><Link to="/" className="hover:underline">Integrations</Link></li>
             <li><Link to="/pricing" className="hover:underline">Pricing</Link></li>
-            <li><Link to="/demo" className="hover:underline">Live Demo</Link></li>
+            <li><Link to="/" className="hover:underline">Live Demo</Link></li>
           </ul>
         </div>
 
