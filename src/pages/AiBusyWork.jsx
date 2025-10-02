@@ -65,14 +65,15 @@ export default function AiBusyWork() {
             </div>
           </div>
 
-          {/* RIGHT: ROBOT IMAGE */}
+          {/* RIGHT */}
           <div className="flex justify-center ">
-             <Lottie
-                   animationData={robotAnimation}
-                   loop
-                   autoplay
-                   style={{ width: 600, height: 500 }}
-                 />
+           <Lottie
+                        animationData={robotAnimation}
+                        loop
+                        autoplay
+                        className="w-[200px] h-[200px] md:h-[500px] md:w-[400px] lg:w-[600px] lg:h-[600px]"
+                      />
+                
            
           </div>
         </div>

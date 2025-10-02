@@ -131,9 +131,9 @@ export default function Home() {
             </motion.ul>
           </motion.div>
 
-          {/* RIGHT: Image */}
+          {/* right div */}
           <motion.div
-            className="lg:col-span-5 flex justify-center -mt-[1%] mb-6 md:mt-[2%]"
+            className="lg:col-span-5 flex justify-center   "
             initial={{ x: 60, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1.2, ease: "easeOut" }}
@@ -142,7 +142,7 @@ export default function Home() {
               animationData={robotAnimation}
               loop
               autoplay
-              style={{ width: 500, height: 400 }}
+              className="w-[250px] h-[250px] md:h-[500px] md:w-[400px] lg:w-[600px] lg:h-[600px]"
             />
           </motion.div>
         </div>

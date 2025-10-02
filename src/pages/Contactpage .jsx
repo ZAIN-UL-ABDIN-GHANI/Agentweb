@@ -285,12 +285,13 @@ export default function ContactPage() {
             </div>
 
             <div className="rounded-xl overflow-hidden bg-[#0b0b0d] border border-pur/60">
-                <Lottie
-                               animationData={robotAnimation}
-                               loop
-                               autoplay
-                               style={{ width: 400, height: 250 }}
-                             />
+           <Lottie
+                                  animationData={robotAnimation}
+                                  loop
+                                  autoplay
+                                  className="w-[300px] h-[300px] md:h-[500px] md:w-[400px] lg:w-[600px] lg:h-[600px]"
+                                />
+                          
               <div className="p-4">
                 <p className="text-gray-300 text-sm">
                   Prefer a live demo? Book a 20-min walkthrough with our product
