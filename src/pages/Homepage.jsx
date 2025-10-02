@@ -6,21 +6,39 @@ import AiBusyWork from "./AiBusyWork";
 import { Link } from "react-router-dom";
 import TestimonialSlider from "../components/TestimonialSlider";
 
+import Lottie from "lottie-react";
+import robotAnimation from "../assets/files/agent.json";
+import { motion } from "framer-motion";
+
 export default function Home() {
   return (
-    <section className="px-[2%] md:px-[0.3%] mt-[1%] sm:mt-[3%] md:mt-[2%] overflow-hidden">
+    <motion.section
+      className="px-[2%] md:px-[0.3%] mt-[1%] sm:mt-[3%] md:mt-[2%] overflow-hidden"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.2, ease: "easeInOut" }}
+    >
       {/* Background Gradient */}
-      <div
+      <motion.div
         className="absolute inset-0"
         style={{
           background:
             "linear-gradient(90deg, #0b0b0d 0%, rgba(23,18,12,0.85) 40%, rgba(20,18,15,0.95) 100%)",
         }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.5 }}
       />
+
       <div className="relative z-10 px-[5%] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center min-h-[108vh]">
           {/* LEFT: Text Content */}
-          <div className="lg:col-span-7 max-w-2xl">
+          <motion.div
+            className="lg:col-span-7 max-w-2xl"
+            initial={{ x: -60, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+          >
             <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-[34.7px] md:leading-[37.7px] lg:leading-[47px] mt-[30%] sm:mt-[0.6%]">
               <span className="text-pur">Next-Gen Agents:</span>{" "}
               <span className="block text-white/95">Smart Automation</span>
@@ -35,7 +53,12 @@ export default function Home() {
             </p>
 
             {/* CTA Buttons */}
-            <div className="mt-8 flex gap-4">
+            <motion.div
+              className="mt-8 flex gap-4"
+              initial={{ y: 30, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 1, delay: 0.3 }}
+            >
               <Link
                 to="/login"
                 className="px-3 text-[12px] md:text-[16px] md:px-6 py-3 rounded-md bg-pur text-black font-semibold shadow hover:bg-purLight transition"
@@ -49,10 +72,15 @@ export default function Home() {
               >
                 Get Started
               </Link>
-            </div>
+            </motion.div>
 
             {/* Features */}
-            <ul className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <motion.ul
+              className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 1.2, delay: 0.4 }}
+            >
               <li className="flex items-start gap-3">
                 <span className="flex items-center justify-center h-9 w-9 rounded-full bg-pur text-slate-900">
                   <svg
@@ -100,28 +128,33 @@ export default function Home() {
                   </p>
                 </div>
               </li>
-            </ul>
-          </div>
+            </motion.ul>
+          </motion.div>
 
           {/* RIGHT: Image */}
-          <div className="lg:col-span-5 flex justify-center -mt-[1%] mb-6  md:mt-[2%]">
-            <img
-              src={Homeimage}
-              alt="Robot"
-              className="
-                h-auto max-h-72  
-                w-auto max-w-sm  
-                transition-transform duration-300
-                hover:-translate-y-6 cursor-pointer
-                drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)]
-              "
+          <motion.div
+            className="lg:col-span-5 flex justify-center -mt-[1%] mb-6 md:mt-[2%]"
+            initial={{ x: 60, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
+          >
+            <Lottie
+              animationData={robotAnimation}
+              loop
+              autoplay
+              style={{ width: 500, height: 400 }}
             />
-          </div>
+          </motion.div>
         </div>
       </div>
 
       {/* Explore Section */}
-      <div className="max-w-3xl mx-auto text-center mb-8 px-[2.3%] sm:px-0">
+      <motion.div
+        className="max-w-3xl mx-auto text-center mb-8 px-[2.3%] sm:px-0"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
         <h1 className="text-2xl md:text-4xl font-bold mb-2 text-white">
           Explore All <span className="text-pur">AI Agent Solutions</span>
         </h1>
@@ -130,24 +163,42 @@ export default function Home() {
           suite of AI Agent solutions. Whether you&apos;re looking to automate
           customer support or streamline research, we’ve got you covered.
         </p>
-      </div>
+      </motion.div>
 
       {/* Only 3 agents shown here */}
-      <div className="max-w-6xl mx-auto px-[4%] md:px-[5%] ">
+      <motion.div
+        className="max-w-6xl mx-auto px-[4%] md:px-[5%] "
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+      >
         <AgentsCards items={AgentsData.slice(0, 3)} />
-      </div>
+      </motion.div>
 
       {/* Show more button */}
-      <div className="max-w-6xl mx-auto mt-8 ml-[5%] md:ml-[10%] flex justify-start">
+      <motion.div
+        className="max-w-6xl mx-auto mt-8 ml-[5%] md:ml-[10%] flex justify-start"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
         <Link
           to="/agents"
           className="px-6 py-3 rounded-lg bg-pur text-black font-semibold hover:bg-purLight transition"
         >
           Show more
         </Link>
-      </div>
-      <AiBusyWork/>
-      <TestimonialSlider/>
-    </section>
+      </motion.div>
+
+      <AiBusyWork />
+
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
+        <TestimonialSlider />
+      </motion.div>
+    </motion.section>
   );
 }

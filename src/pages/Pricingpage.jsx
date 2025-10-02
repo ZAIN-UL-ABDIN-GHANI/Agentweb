@@ -1,10 +1,18 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { FALSE } from "sass";
 
 export default function PricingPlans() {
   return (
     <main className="min-h-screen flex items-center justify-center py-16 px-8 md:px-[5%] mt-[8%] md:mt-[4%] text-white antialiased">
       <div className="max-w-7xl w-full">
-        <header className="text-center mb-10">
+        <motion.header
+          className="text-center mb-10"
+          initial={{ opacity: 0, y: -40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: FALSE }}
+        >
           <h1 className="text-3xl md:text-4xl font-semibold">
             <span className="text-white">Pricing</span>{" "}
             <span className="text-pur">Plans</span>
@@ -14,11 +22,17 @@ export default function PricingPlans() {
             grow. Start small, unlock advanced automation, or power your entire
             team — all with flexible AI pricing.
           </p>
-        </header>
+        </motion.header>
 
         <section className="grid gap-8 grid-cols-1 md:grid-cols-3 items-start">
           {/* Starter */}
-          <article className="bg-white/95 text-[#0b0b0b] rounded-2xl p-8 shadow-lg transform transition hover:-translate-y-1">
+          <motion.article
+            className="bg-white/95 text-[#0b0b0b] rounded-2xl p-8 shadow-lg transform transition hover:-translate-y-1"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+            viewport={{ once: true }}
+          >
             <h3 className="text-xl font-semibold text-pur">Starter</h3>
             <p className="mt-2 text-sm text-gray-600">
               Ideal for individuals and solopreneurs.
@@ -65,16 +79,20 @@ export default function PricingPlans() {
                 Upgrade
               </button>
             </div>
-          </article>
+          </motion.article>
 
           {/* Growth (Popular) */}
-          <article
+          <motion.article
             className="relative bg-extrapurLight  text-pur  rounded-[1.25rem] p-8"
             style={{
               boxShadow:
-                "0 10px 30px rgba(0,0,0,0.45), inset 0 1px 0 rgba(157,0,255,0.06)", 
-              border: "2px solid rgba(157, 0, 255, 0.2)", 
+                "0 10px 30px rgba(0,0,0,0.45), inset 0 1px 0 rgba(157,0,255,0.06)",
+              border: "2px solid rgba(157, 0, 255, 0.2)",
             }}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+            viewport={{ once: true }}
           >
             <div className="absolute -top-3 left-1/2 -translate-x-1/2">
               <div className="bg-pur text-white text-xs font-medium py-1.5 px-4 rounded-full shadow">
@@ -142,10 +160,16 @@ export default function PricingPlans() {
                 * Annual billing and volume discounts available
               </div>
             </div>
-          </article>
+          </motion.article>
 
           {/* Enterprise */}
-          <article className="bg-white/95 text-pur rounded-2xl p-8 shadow-lg transform transition hover:-translate-y-1">
+          <motion.article
+            className="bg-white/95 text-pur rounded-2xl p-8 shadow-lg transform transition hover:-translate-y-1"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
+            viewport={{ once: true }}
+          >
             <h3 className="text-xl font-semibold">Enterprise</h3>
             <p className="mt-2 text-sm text-gray-700">
               Perfect for startups, teams, and organizations with advanced
@@ -195,7 +219,7 @@ export default function PricingPlans() {
                 Custom Pricing
               </button>
             </div>
-          </article>
+          </motion.article>
         </section>
       </div>
     </main>

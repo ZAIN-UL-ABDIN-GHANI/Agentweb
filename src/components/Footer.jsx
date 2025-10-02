@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Footer() {
   return (
     <footer className="bg-purLight text-gray-800 text-sm mt-[2%]">
@@ -14,11 +16,11 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold mb-3">Product</h3>
           <ul className="space-y-2">
-            <li><a href="#" className="hover:underline">AI Agents</a></li>
-            <li><a href="#" className="hover:underline">Task Automation</a></li>
-            <li><a href="#" className="hover:underline">Integrations</a></li>
-            <li><a href="#" className="hover:underline">Pricing</a></li>
-            <li><a href="#" className="hover:underline">Live Demo</a></li>
+            <li><Link to="/agents" className="hover:underline">AI Agents</Link></li>
+            <li><Link to="/automation" className="hover:underline">Task Automation</Link></li>
+            <li><Link to="/integrations" className="hover:underline">Integrations</Link></li>
+            <li><Link to="/pricing" className="hover:underline">Pricing</Link></li>
+            <li><Link to="/demo" className="hover:underline">Live Demo</Link></li>
           </ul>
         </div>
 
@@ -26,11 +28,11 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold mb-3">Company</h3>
           <ul className="space-y-2">
-            <li><a href="#" className="hover:underline">About Us</a></li>
-            <li><a href="#" className="hover:underline">Careers</a></li>
-            <li><a href="#" className="hover:underline">Blog</a></li>
-            <li><a href="#" className="hover:underline">Press</a></li>
-            <li><a href="#" className="hover:underline">FAQ</a></li>
+            <li><Link to="/about" className="hover:underline">About Us</Link></li>
+            <li><Link to="/" className="hover:underline">Careers</Link></li>
+            <li><Link to="/" className="hover:underline">Blog</Link></li>
+            <li><Link to="/" className="hover:underline">Press</Link></li>
+            <li><Link to="/" className="hover:underline">FAQ</Link></li>
           </ul>
         </div>
 
@@ -38,11 +40,11 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold mb-3">Use Cases</h3>
           <ul className="space-y-2">
-            <li><a href="#" className="hover:underline">Entrepreneurs & Startups</a></li>
-            <li><a href="#" className="hover:underline">Small Teams & Agencies</a></li>
-            <li><a href="#" className="hover:underline">Enterprise Solutions</a></li>
-            <li><a href="#" className="hover:underline">Education & Research</a></li>
-            <li><a href="#" className="hover:underline">Personal Productivity</a></li>
+            <li><Link to="/" className="hover:underline">Entrepreneurs & Startups</Link></li>
+            <li><Link to="/" className="hover:underline">Small Teams & Agencies</Link></li>
+            <li><Link to="/" className="hover:underline">Enterprise Solutions</Link></li>
+            <li><Link to="/" className="hover:underline">Education & Research</Link></li>
+            <li><Link to="/" className="hover:underline">Personal Productivity</Link></li>
           </ul>
         </div>
 
@@ -50,11 +52,11 @@ export default function Footer() {
         <div>
           <h3 className="font-semibold mb-3">Resources</h3>
           <ul className="space-y-2">
-            <li><a href="#" className="hover:underline">Community</a></li>
-            <li><a href="#" className="hover:underline">Help Center</a></li>
-            <li><a href="#" className="hover:underline">Documentation</a></li>
-            <li><a href="#" className="hover:underline">Customer Stories</a></li>
-            <li><a href="#" className="hover:underline">Tutorials</a></li>
+            <li><Link to="/" className="hover:underline">Community</Link></li>
+            <li><Link to="/" className="hover:underline">Help Center</Link></li>
+            <li><Link to="/" className="hover:underline">Documentation</Link></li>
+            <li><Link to="/" className="hover:underline">Customer Stories</Link></li>
+            <li><Link to="/" className="hover:underline">Tutorials</Link></li>
           </ul>
         </div>
       </div>
@@ -64,9 +66,9 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center text-gray-600">
           <p>© 2025 AGENTAI. All Rights Reserved.</p>
           <div className="flex gap-4 mt-2 md:mt-0">
-            <a href="#" className="hover:underline">Terms of Service</a>
-            <a href="#" className="hover:underline">Privacy Policy</a>
-            <a href="#" className="hover:underline">Cookie Policy</a>
+            <Link to="/" className="hover:underline">Terms of Service</Link>
+            <Link to="/" className="hover:underline">Privacy Policy</Link>
+            <Link to="/" className="hover:underline">Cookie Policy</Link>
           </div>
         </div>
       </div>

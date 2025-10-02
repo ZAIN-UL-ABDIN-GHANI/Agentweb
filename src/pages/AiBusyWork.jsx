@@ -1,6 +1,7 @@
 import React from "react";
-import robotimage from "../assets/busyworkagentimage.png";
 
+import Lottie from "lottie-react";
+import robotAnimation from "../assets/files/RobotSaludando.json";
 export default function AiBusyWork() {
   return (
     <section
@@ -66,17 +67,13 @@ export default function AiBusyWork() {
 
           {/* RIGHT: ROBOT IMAGE */}
           <div className="flex justify-center ">
-            <img
-              src={robotimage}
-              alt="AI assistant robot illustration"
-              loading="lazy"
-              className="   h-auto max-h-72  
-                w-auto max-w-sm  
-                transition-transform duration-300
-                hover:-translate-y-6 cursor-pointer
-                drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)]"
-              style={{ filter: "drop-shadow(0 20px 40px rgba(0,0,0,0.6))" }}
-            />
+             <Lottie
+                   animationData={robotAnimation}
+                   loop
+                   autoplay
+                   style={{ width: 600, height: 500 }}
+                 />
+           
           </div>
         </div>
       </div>

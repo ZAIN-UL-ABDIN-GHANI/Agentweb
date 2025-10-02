@@ -1,8 +1,8 @@
 // src/pages/Contact.jsx
 import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import ContactImage from "../assets/aboutus.png";
-
+import Lottie from "lottie-react";
+import robotAnimation from "../assets/files/Robot.json";
 export default function ContactPage() {
   const [form, setForm] = useState({
     name: "",
@@ -285,12 +285,12 @@ export default function ContactPage() {
             </div>
 
             <div className="rounded-xl overflow-hidden bg-[#0b0b0d] border border-pur/60">
-              <img
-                src={ContactImage}
-                alt="Contact illustration"
-                loading="lazy"
-                className="w-full h-56 object-cover"
-              />
+                <Lottie
+                               animationData={robotAnimation}
+                               loop
+                               autoplay
+                               style={{ width: 400, height: 250 }}
+                             />
               <div className="p-4">
                 <p className="text-gray-300 text-sm">
                   Prefer a live demo? Book a 20-min walkthrough with our product
