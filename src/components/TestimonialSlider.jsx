@@ -29,6 +29,37 @@ const testimonials = [
     role: "Startup Founder",
     img: "https://i.pravatar.cc/100?img=14",
   },
+  {
+  text: "Integrating this AI agent into our workflow was a game-changer. It anticipates tasks I might forget and provides timely nudges, keeping my team aligned and productive.",
+  name: "Emma L.",
+  role: "Project Manager",
+  img: "https://i.pravatar.cc/100?img=15",
+},
+{
+  text: "The AI assistant helps me prioritize what truly matters. It highlights urgent tasks and automates repetitive ones, which has dramatically reduced my daily stress levels.",
+  name: "Noah S.",
+  role: "Software Engineer",
+  img: "https://i.pravatar.cc/100?img=16",
+},
+{
+  text: "I appreciate how intuitive and proactive this AI agent is. From organizing meetings to summarizing notes, it feels like having an extra pair of hands at all times.",
+  name: "Ava P.",
+  role: "Marketing Lead",
+  img: "https://i.pravatar.cc/100?img=17",
+},
+{
+  text: "It’s like having a personal productivity coach in my pocket. Tasks, reminders, and collaborative updates are seamlessly handled without me lifting a finger.",
+  name: "Ethan B.",
+  role: "Business Analyst",
+  img: "https://i.pravatar.cc/100?img=18",
+},
+{
+  text: "This tool keeps our distributed team in sync effortlessly. Deadlines, progress updates, and task assignments are automatically tracked, saving us hours each week.",
+  name: "Isabella W.",
+  role: "Operations Manager",
+  img: "https://i.pravatar.cc/100?img=19",
+},
+
 ];
 
 export default function Testimonials() {

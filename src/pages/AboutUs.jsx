@@ -3,13 +3,14 @@ import { MdOutlineSecurity } from "react-icons/md";
 import { BsGraphUp } from "react-icons/bs";
 import { HiLightBulb } from "react-icons/hi";
 import Lottie from "lottie-react";
-import { motion } from "framer-motion";   
+import { motion } from "framer-motion";
 import robotAnimation from "../assets/files/Ai-powered marketing tools abstract.json";
-
+import aiAutomationLottie from "../assets/files/Delivery Packaging.json";
+import smartAgentsLottie from "../assets/files/RobotSaludando.json";
+import { Link } from "react-router-dom";
 export default function AboutUS() {
   return (
     <>
-
       <motion.section
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -68,18 +69,23 @@ export default function AboutUS() {
 
               {/* CTA Buttons */}
               <div className="mt-8 flex gap-4">
-                <a
-                  href="/agents"
-                  className="px-[6px] text-[12px] md:text-[16px] md:px-6 py-3 rounded-md bg-pur text-black font-semibold shadow hover:bg-purLight transition"
+                <Link
+                  to="/agents"
+                  className="px-[6px] text-[12px] md:text-[16px] md:px-6 py-3 rounded-md bg-pur text-black font-semibold shadow-lg
+               transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl
+               hover:bg-gradient-to-r hover:from-purLight hover:to-pur/80"
                 >
                   View Agent (demo)
-                </a>
-                <a
-                  href="/contact"
-                  className="px-2 py-3 rounded-md border border-pur text-pur hover:bg-purLight transition"
+                </Link>
+
+                <Link
+                  to="/contact"
+                  className="px-2 py-3 rounded-md border border-pur text-pur font-semibold
+               transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg
+               hover:bg-gradient-to-r hover:from-purLight hover:to-pur/20 hover:text-black"
                 >
-                  Contact sales
-                </a>
+                  Contact Sales
+                </Link>
               </div>
 
               {/* Features */}
@@ -173,7 +179,7 @@ export default function AboutUS() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
-        className="relative py-16 px-[5%] bg-[#0d0d11]"
+        className="relative py-16 px-[5%] "
       >
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <div>
@@ -183,7 +189,8 @@ export default function AboutUS() {
             <p className="mt-4 text-gray-300 text-[15px] md:text-[18px] leading-relaxed">
               One of our AI agents helped a logistics company cut manual
               paperwork by 60% and save over 2,000 hours annually. The agent
-              scaled to manage <span className="text-pur">10k+ daily tasks</span>
+              scaled to manage{" "}
+              <span className="text-pur">10k+ daily tasks</span>
               with 99.9% uptime, ensuring smooth operations.
             </p>
             <p className="mt-3 text-gray-400 text-sm">
@@ -209,7 +216,7 @@ export default function AboutUS() {
       >
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <div className="order-2 lg:order-1 flex justify-center">
-            <div className="p-10 bg-[#1b1b20] rounded-2xl shadow-lg flex flex-col items-center">
+            <div className="p-10  rounded-2xl shadow-lg flex flex-col items-center">
               <MdOutlineSecurity className="text-pur text-6xl mb-4" />
               <p className="text-gray-200 font-semibold">Safe & Reliable</p>
             </div>
@@ -239,17 +246,18 @@ export default function AboutUS() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
-        className="relative py-16 px-[5%] bg-[#0d0d11]"
+        className="relative py-16 px-[5%]"
       >
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white flex justify-center items-center gap-3">
             <BsGraphUp className="text-pur text-4xl" /> The Future of AI Agents
           </h2>
-          <p className="mt-4 text-gray-300 text-[15px] md:text-[18px] leading-relaxed max-w-3xl mx-auto">
+          <p className=" text-gray-300 text-[15px] md:text-[18px] leading-relaxed max-w-3xl mx-auto">
             Our long-term vision is to make AI agents{" "}
             <span className="text-pur">trusted co-pilots</span> for every
             business team. From customer support to analytics, agents reduce
-            manual effort while keeping <span className="text-pur">humans in control</span>.
+            manual effort while keeping{" "}
+            <span className="text-pur">humans in control</span>.
           </p>
 
           <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-6">
@@ -269,10 +277,86 @@ export default function AboutUS() {
             </div>
             <div className="p-6 bg-[#1b1b20] rounded-xl shadow-md hover:scale-105 transition">
               <FaHandshake className="text-pur text-3xl mb-3" />
-              <h3 className="text-lg font-semibold text-white">Human-Centric</h3>
+              <h3 className="text-lg font-semibold text-white">
+                Human-Centric
+              </h3>
               <p className="mt-2 text-gray-400 text-sm">
                 Built with ethics, transparency, and oversight in mind.
               </p>
+            </div>
+          </div>
+          {/* ===== AI AUTOMATION SECTION ===== */}
+          <section className="mt-[10%] md:mt-[14%] p-10 rounded-3xl flex flex-col items-center justify-center  px-1 bg-black text-white">
+            <div className="max-w-5xl">
+              <h2 className="text-2xl sm:text-4xl md:text-6xl font-bold mb-6 text-pur">
+                AI-Powered Automation
+              </h2>
+              <p className="text-base sm:text-lg md:text-xl mb-4 text-gray-200 leading-[22px] max-w-6xl">
+                Our intelligent automation ecosystem leverages cutting-edge AI
+                to streamline business processes, minimize manual intervention,
+                and enhance decision-making. From predictive analytics to
+                automated workflows, our system adapts and learns continuously
+                for maximum efficiency.
+              </p>
+              <p className="text-base sm:text-lg md:text-xl mb-8 text-gray-500 leading-[20px]">
+                Whether it’s managing customer interactions, optimizing data
+                pipelines, or monitoring performance in real time, our
+                automation framework ensures accuracy, speed, and consistency —
+                empowering teams to focus on creativity and innovation.
+              </p>
+
+              <div className="flex justify-center items-center w-full">
+                <Lottie
+                  animationData={aiAutomationLottie}
+                  loop
+                  autoplay
+                  className="w-[250px] sm:w-[300px] md:w-[400px] lg:w-[500px] h-auto"
+                />
+              </div>
+            </div>
+          </section>
+          {/* ===== SMART AGENTS SECTION ===== */}
+          <div className="max-w-6xl mx-auto px-4 mt-[5%] text-center">
+            <h2 className="text-2xl md:text-6xl font-extrabold mb-6 text-pur">
+              Smart Agents in Action
+            </h2>
+
+            <p className="text-base md:text-xl mb-6 text-gray-300 leading-relaxed">
+              Experience the intelligence of our next-generation AI agents that
+              go beyond automation — they learn from real-world data, make
+              strategic decisions, and optimize workflows on the fly. Designed
+              for precision, adaptability, and scalability, these agents are
+              redefining how humans and machines collaborate.
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div className="flex justify-center order-2 md:order-1">
+                <Lottie
+                  animationData={smartAgentsLottie}
+                  loop
+                  autoplay
+                  style={{ width: "100%", maxWidth: 400, height: "auto" }}
+                />
+              </div>
+
+              <div className="order-1 md:order-2 text-left md:text-justify space-y-4">
+                <h3 className="text-2xl font-semibold text-pur">
+                  Capabilities:
+                </h3>
+                <ul className="list-disc list-inside text-gray-300 text-base md:text-lg space-y-2">
+                  <li>Real-time data analysis and pattern recognition</li>
+                  <li>Autonomous task execution with minimal supervision</li>
+                  <li>Adaptive learning that improves accuracy over time</li>
+                  <li>Seamless integration with enterprise systems and APIs</li>
+                  <li>Decision-making driven by ethical AI frameworks</li>
+                </ul>
+
+                <p className="mt-4 text-gray-400 italic">
+                  "Empowering businesses through intelligent autonomy — where
+                  every decision is data-driven, and every task is optimized for
+                  excellence."
+                </p>
+              </div>
             </div>
           </div>
         </div>

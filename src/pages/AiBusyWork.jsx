@@ -18,7 +18,7 @@ export default function AiBusyWork() {
         }}
       />
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6  md:px-1 -mt-[20%] md:mt-0 py-4 md:py-20">
+      <div className="relative z-10 max-w-6xl mx-auto px-6  md:px-1 -mt-[20%] md:mt-0 py-4 md:py-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* LEFT CONTENT */}
           <div>

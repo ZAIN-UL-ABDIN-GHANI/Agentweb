@@ -205,7 +205,7 @@ export default function PricingPlans() {
             <div className="mt-8 flex items-end justify-between">
               <div>
                 <div className="text-2xl font-bold">
-                  $15
+                  $150
                   <span className="text-sm font-normal text-gray-500">
                     {" "}
                     / per month

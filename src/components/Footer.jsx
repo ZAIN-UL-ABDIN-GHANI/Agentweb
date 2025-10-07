@@ -30,9 +30,9 @@ export default function Footer() {
           <ul className="space-y-2">
             <li><Link to="/about" className="hover:underline">About Us</Link></li>
             <li><Link to="/" className="hover:underline">Careers</Link></li>
-            <li><Link to="/" className="hover:underline">Blog</Link></li>
+            <li><Link to="/blog" className="hover:underline">Blog</Link></li>
             <li><Link to="/" className="hover:underline">Press</Link></li>
-            <li><Link to="/" className="hover:underline">FAQ</Link></li>
+            <li><Link to="/faqs" className="hover:underline">FAQ</Link></li>
           </ul>
         </div>
 
