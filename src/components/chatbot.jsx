@@ -198,9 +198,9 @@ export default function ChatBot({ placeholder = "Ask me about pricing, agents, s
             animate={{ opacity: 1, x: 0, y: 0 }}
             exit={{ opacity: 0, x: 80, y: 80 }}
             transition={{ type: "spring", stiffness: 200, damping: 25 }}
-            className="fixed inset-0 flex items-end justify-center z-[9999] sm:items-center sm:px-4"
+            className="fixed px-[5%] py-3 inset-0 flex items-end justify-center z-[9999] sm:items-center sm:px-4"
           >
-            <div className="w-full max-w-sm sm:max-w-md h-[80vh] sm:h-[70vh] flex flex-col bg-[#0b0b0b]/90 backdrop-blur-md border border-white rounded-2xl shadow-xl overflow-hidden">
+            <div className="w-full px-[1px] max-w-sm sm:max-w-md h-[80vh] sm:h-[70vh] flex flex-col bg-[#0b0b0b]/90 backdrop-blur-md border border-white rounded-2xl shadow-xl overflow-hidden">
               {/* Header */}
               <div className="flex items-center justify-between px-4 py-3 border-b border-white">
                 <div className="flex items-center gap-3">
