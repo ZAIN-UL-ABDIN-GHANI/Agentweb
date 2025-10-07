@@ -18,7 +18,6 @@ export default function ContactPage() {
     success: null,
     msg: "",
   });
-
   const agents = [
   { value: "", label: "Any / Unsure" },
   { value: "task", label: "Task Automation" },
