@@ -19,6 +19,7 @@ import DetailBlog from "./pages/Blogs/blogDetails";
 import Login from "./pages/Auth/Loginpage";
 import Signup from "./pages/Auth/SigninPage";
 import Home from "./pages/Homepage";
+import AdminAgents from "./Admin/admin";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/pricing" element={<PricingPlans />} />
           <Route path="/faqs" element={<FAQs />} />
+          <Route path="/admin" element={<AdminAgents/>} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<DetailBlog />} />
           <Route path="/login" element={<Login />} />

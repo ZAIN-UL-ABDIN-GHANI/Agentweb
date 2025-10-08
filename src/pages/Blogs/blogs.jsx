@@ -127,7 +127,7 @@ const Blogs = memo(function Blogs() {
 
   return (
     <>
-      <header className="mt-[5%] md:mt-[8%] mb-10 text-center flex flex-col items-center justify-center space-y-4">
+      <header className="mt-[25%] md:mt-[8%] mb-10 text-center flex flex-col items-center justify-center space-y-4">
         <motion.div
           ref={ref}
           animate={controls}
@@ -145,7 +145,7 @@ const Blogs = memo(function Blogs() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-pur to-pink-500 bg-clip-text text-transparent tracking-wide"
+          className="text-2xl px-4 md:text-4xl font-extrabold bg-gradient-to-r from-pur to-pink-500 bg-clip-text text-transparent tracking-wide"
         >
           The Thinking Grid — Voices of Intelligent Systems
         </motion.h2>
@@ -155,7 +155,7 @@ const Blogs = memo(function Blogs() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.5 }}
           viewport={{ once: true }}
-          className="text-base text-gray-400 max-w-md mx-auto"
+          className="text-base text-gray-400  px-6 max-w-md mx-auto"
         >
           Hand-picked reads — <span className="text-pur font-semibold">optimized</span>{" "}
           and <span className="text-pink-500 font-semibold">accessible</span>.

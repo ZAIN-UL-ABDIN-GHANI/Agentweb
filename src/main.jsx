@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App.jsx';
 import { BrowserRouter } from 'react-router-dom';
+import { AgentsProvider } from './Admin/context/adminContext.jsx';
 
-// Error boundary component
+// Error Boundary Component
 class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props);
@@ -42,12 +43,15 @@ class ErrorBoundary extends React.Component {
   }
 }
 
+//render setup
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ErrorBoundary>
       <BrowserRouter>
-        <App />
+        <AgentsProvider>
+          <App />
+        </AgentsProvider>
       </BrowserRouter>
     </ErrorBoundary>
-  </React.StrictMode>,
+  </React.StrictMode>
 );

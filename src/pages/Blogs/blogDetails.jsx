@@ -13,8 +13,8 @@ const DetailBlog = () => {
   }
 
   return (
-    <div className="mt-[6%] max-w-6xl mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold text-center text-pur mb-6">
+    <div className="mt-[20%] max-w-6xl mx-auto px-4 py-8">
+      <h1 className="text-xl md:text-4xl font-bold text-center text-pur mb-6">
         {blog.title}
       </h1>
 
