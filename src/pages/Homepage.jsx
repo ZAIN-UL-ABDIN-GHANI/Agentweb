@@ -7,7 +7,6 @@ import AiBusyWork from "./AiBusyWork";
 import { Link } from "react-router-dom";
 import TestimonialSlider from "../components/TestimonialSlider";
 import { blogsData } from "../pages/Blogs/seperate/index";
-
 import Lottie from "lottie-react";
 import robotAnimation from "../assets/files/agent.json";
 import { motion } from "framer-motion";
