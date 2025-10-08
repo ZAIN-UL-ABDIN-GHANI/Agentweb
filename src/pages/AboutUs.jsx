@@ -285,7 +285,7 @@ export default function AboutUS() {
               </p>
             </div>
           </div>
-          {/* ===== AI AUTOMATION SECTION ===== */}
+          {/*  AI AUTOMATION SECTION ===== */}
           <section className="mt-[10%] md:mt-[14%] p-10 rounded-3xl flex flex-col items-center justify-center  px-1 bg-black text-white">
             <div className="max-w-5xl">
               <h2 className="text-2xl sm:text-4xl md:text-6xl font-bold mb-6 text-pur">
@@ -315,7 +315,7 @@ export default function AboutUS() {
               </div>
             </div>
           </section>
-          {/* ===== SMART AGENTS SECTION ===== */}
+          {/*  SMART AGENTS SECTION ===== */}
           <div className="max-w-6xl mx-auto px-4 mt-[5%] text-center">
             <h2 className="text-2xl md:text-6xl font-extrabold mb-6 text-pur">
               Smart Agents in Action
