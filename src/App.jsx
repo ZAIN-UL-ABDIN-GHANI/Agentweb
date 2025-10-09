@@ -22,7 +22,11 @@ import AdminAgents from "./Admin/admin";
 import Error404 from "./pages/errorpage";
 function App() {
   return (
-    <div className="min-h-full font-primary select-none bg-[#0a0a0a] text-white">
+    <div
+        style={{
+          background:
+            "linear-gradient(90deg, #0b0b0d 0%, rgba(23,18,12,0.85) 40%, rgba(20,18,15,0.95) 100%)",
+        }} className="min-h-full font-primary select-none bg-[#0a0a0a] text-white">
       <Header />
       <ScrollToTop />
       <main className="w-full">
