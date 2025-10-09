@@ -19,6 +19,7 @@ import Login from "./pages/Auth/Loginpage";
 import Signup from "./pages/Auth/SigninPage";
 import Home from "./pages/Homepage";
 import AdminAgents from "./Admin/admin";
+import Error404 from "./pages/errorpage";
 function App() {
   return (
     <div className="min-h-full font-primary select-none bg-[#0a0a0a] text-white">
@@ -39,6 +40,7 @@ function App() {
           <Route path="/blog/:id" element={<DetailBlog />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+            <Route path="*" element={<Error404 />} />
         </Routes>
       </main>
       <ChatBot />

@@ -29,7 +29,7 @@ export default function AgentPage() {
   const paginated = filtered.slice((currentPage - 1) * pageSize, currentPage * pageSize);
 
   return (
-    <div className="min-h-screen px-[4%] md:px-[6%] mt-[7%] bg-gradient-to-b from-black via-[#1a1406] to-black text-white py-8">
+    <div className="min-h-screen px-[4%] md:px-[6%] mt-[16%] md:mt-[7%] bg-gradient-to-b from-black via-[#1a1406] to-black text-white py-8">
       <div className="text-center mb-8">
         <h1 className="text-3xl md:text-4xl font-bold">
           Explore All <span className="text-pur">AI Agent Solutions</span>
